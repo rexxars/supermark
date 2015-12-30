@@ -6,7 +6,7 @@ Flat-file markdown "blog" system
 
 * Specify a short, simple header standard for documents that is valid Markdown. Horizontal rule to separate header from content.
   - **Document title**
-  - Summary - none by default
+  - Excerpt - none by default
   - Slug - default: `slug(docTitle)`
   - Publish date (with support for future dates) - default: document creation timestamp
   - Status (draft/published) - default: published
