@@ -1,6 +1,6 @@
-<img align="right" width="270" height="270" src="assets/supermark.png" alt="Supermark">
-
 # supermark
+
+<img align="right" width="270" height="270" src="assets/supermark.png" alt="Supermark">
 
 Flat-file markdown content (read: "blog") system
 
