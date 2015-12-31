@@ -1,0 +1,40 @@
+{
+  "name": "supermark",
+  "version": "0.0.1",
+  "description": "Flat-file markdown content/blog system",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "ci": "npm run lint && npm run coverage",
+    "coverage": "istanbul cover -- tape test/*.test.js",
+    "test": "tape test/*.test.js",
+    "posttest": "npm run lint",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexxars/supermark.git"
+  },
+  "keywords": [
+    "supermark",
+    "markdown",
+    "blog"
+  ],
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rexxars/supermark/issues"
+  },
+  "homepage": "https://github.com/rexxars/supermark#readme",
+  "dependencies": {
+    "supermark-extract": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-vaffel": "^4.0.0",
+    "istanbul": "^0.4.1",
+    "tape": "^4.4.0"
+  }
+}

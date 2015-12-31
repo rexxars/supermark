@@ -1,6 +1,8 @@
 # supermark
 
-Flat-file markdown "blog" system
+<img align="right" width="270" height="270" src="assets/supermark.png" alt="Supermark">
+
+Flat-file markdown content (read: "blog") system
 
 ## Random thoughts
 
@@ -21,3 +23,7 @@ Flat-file markdown "blog" system
 * Function to render markdown to HTML [react-markdown](https://github.com/rexxars/react-markdown)
 * Possible editor like [markdown-editor](https://github.com/rexxars/markdown-editor) that can save to files from browser, + extraction of header?
 * Add some kind of internal link standard + renderer support? eg: \[tag:whatevs\], \[post:slug\] etc?
+
+## License
+
+MIT-licensed. See LICENSE.
