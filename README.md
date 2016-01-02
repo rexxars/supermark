@@ -12,7 +12,7 @@ Flat-file markdown content (read: "blog") system
   - Slug - default: `slug(docTitle)`
   - Publish date (with support for future dates) - default: document creation timestamp
   - Status (draft/published) - default: published
-  - Visibility (visible/private - up to the implementer to do whatever with this) - default: visible
+  - Visibility (public/private - up to the implementer to do whatever with this) - default: visible
   - Tags - none by default
   - Categories (primary category on top) - none by default
 * Create simple linter/extractor for header standard
