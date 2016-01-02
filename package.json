@@ -2,14 +2,14 @@
   "name": "supermark",
   "version": "0.0.1",
   "description": "Flat-file markdown content/blog system",
-  "main": "src/index.js",
+  "main": "src/supermark.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "ci": "npm run lint && npm run coverage",
-    "coverage": "istanbul cover -- tape test/*.test.js",
-    "test": "tape test/*.test.js",
+    "coverage": "istanbul cover -- _mocha test/*.test.js",
+    "test": "mocha test/*.test.js",
     "posttest": "npm run lint",
     "lint": "eslint ."
   },
@@ -29,12 +29,17 @@
   },
   "homepage": "https://github.com/rexxars/supermark#readme",
   "dependencies": {
-    "supermark-extract": "^1.0.2"
+    "async": "^1.5.0",
+    "glob": "^6.0.3",
+    "lodash.partial": "^3.1.1",
+    "speakingurl": "^8.0.0",
+    "supermark-extract": "^1.0.4"
   },
   "devDependencies": {
+    "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-config-vaffel": "^4.0.0",
     "istanbul": "^0.4.1",
-    "tape": "^4.4.0"
+    "mocha": "^2.3.4"
   }
 }

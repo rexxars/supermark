@@ -1,4 +1,4 @@
-Some: Why Espen shouldn't be allowed to stay up late
+Some: This thing has invalid props
 Weird: 2015-12-30T00:11:19.411Z
 Props: That are not defined as valid
 -----------------------------------------------------
