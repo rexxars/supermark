@@ -16,7 +16,7 @@ supermark.findDocuments('/path/to/dir/**/*.md', {
     // docs being an array of objects returned from supermark-extract
 });
 
-supermark.findBySlug('some-slug', /path/to/dir/**/*.md', function onDocFound(err, doc) {
+supermark.findBySlug('some-slug', '/path/to/dir/**/*.md', function onDocFound(err, doc) {
     // woo, found it
 });
 ```
