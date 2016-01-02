@@ -1,8 +1,12 @@
 'use strict';
 
-var test = require('tape');
+var mocha = require('mocha');
 
-test('foo', function(t) {
-    t.equals('foo', 'foo');
-    t.end();
+var describe = mocha.describe;
+var it = mocha.it;
+
+describe('foo', function() {
+    it('should something', function(done) {
+        setImmediate(done);
+    });
 });
