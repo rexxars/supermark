@@ -4,6 +4,10 @@
 
 Flat-file markdown content (read: "blog") system
 
+## Important disclaimer
+
+This is a fun project, but I have yet to really figure out what I think belongs as "core functionality" and what should be left for the user to implement. I wouldn't say I'm very proud of the API or code yet, either. So basically, I wouldn't really use this in production if I were you, but I'd definitely appreciate any help and feedback on features and API etc.
+
 ## Rough API outline
 
 ```js
