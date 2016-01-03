@@ -110,12 +110,16 @@ describe('findDocuments()', function() {
     });
 
     it('normalized author', function(done) {
-        findDocuments(path.join(__dirname, 'fixtures', 'full.md'), function(err, docs) {
+        findDocuments(path.join(__dirname, 'fixtures', '{full,basic}.md'), function(err, docs) {
             expect(err).to.not.exist;
 
-            expect(docs[0].title).to.equal('Full document: The real test.');
+            expect(docs[0].title).to.equal('Why Espen shouldn\'t be allowed to stay up late');
             expect(docs[0].author.name).to.equal('Espen Hovlandsdal');
-            expect(docs[0].author.email).to.equal('espen@hovlandsdal.com');
+            expect(docs[0].author.email).to.be.undefined;
+
+            expect(docs[1].title).to.equal('Full document: The real test.');
+            expect(docs[1].author.name).to.equal('Espen Hovlandsdal');
+            expect(docs[1].author.email).to.equal('espen@hovlandsdal.com');
 
             done();
         });

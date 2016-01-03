@@ -25,6 +25,8 @@ function normalize(doc) {
             name: author[1],
             email: author[2]
         };
+    } else if (doc.author) {
+        doc.author = { name: doc.author };
     }
 
     if (!doc.status) {

@@ -1,4 +1,5 @@
 Title: Why Espen shouldn't be allowed to stay up late
+Author: Espen Hovlandsdal
 Tags:
   - List
   - Ramblings
