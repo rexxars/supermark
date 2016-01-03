@@ -2,6 +2,8 @@
 
 var getSlug = require('speakingurl');
 
+var authorRegex = /^(.*?) <(.*?@.*?)>$/;
+
 function normalize(doc) {
     if (!doc.slug) {
         doc.slug = getSlug(doc.title, {
@@ -15,6 +17,14 @@ function normalize(doc) {
 
     if (!(doc.date instanceof Date)) {
         doc.date = new Date(doc.date);
+    }
+
+    var author = doc.author && doc.author.trim().match(authorRegex);
+    if (author) {
+        doc.author = {
+            name: author[1],
+            email: author[2]
+        };
     }
 
     if (!doc.status) {

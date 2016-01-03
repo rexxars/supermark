@@ -4,6 +4,7 @@ Slug: full-document-the-real-test
 Date: 2015-12-30T00:11:19.411Z
 Status: Draft
 Visibility: Private
+Author: Espen Hovlandsdal <espen@hovlandsdal.com>
 Tags:
   * List
   * Random
