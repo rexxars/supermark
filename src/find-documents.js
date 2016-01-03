@@ -6,6 +6,7 @@ var async = require('async');
 var partial = require('lodash.partial');
 var extract = require('supermark-extract');
 var normalizeDoc = require('./normalize');
+var assign = require('object-assign');
 
 var defaultOptions = {
     allowDuplicateSlugs: false,
@@ -24,8 +25,8 @@ function findDocuments(match, options, callback) {
         options = {};
     }
 
-    var opts = Object.assign({}, defaultOptions, options);
-    var globOpts = Object.assign({}, options.glob || {}, globOptions);
+    var opts = assign({}, defaultOptions, options);
+    var globOpts = assign({}, options.glob || {}, globOptions);
 
     if (typeof globOpts.silent === 'undefined') {
         globOpts.silent = opts.silent;
