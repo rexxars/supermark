@@ -1,6 +1,6 @@
 {
   "name": "supermark",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Flat-file markdown content/blog system",
   "main": "src/supermark.js",
   "directories": {
