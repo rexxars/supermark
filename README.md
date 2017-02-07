@@ -46,7 +46,7 @@ Allow properties:
 - `Date` - An ISO-8601 date for when the document should be/was published.
 - `Status` - Either `Published` or `Draft`. `Draft` usually means the document won't be available to outside readers.
 - `Visibility` - Either `Public` or `Private`. `Private` usually means the document can be viewed with the right link, but does not show up in lists.
-- `Author` - Name and optionally email of the author, in "Name <email>" format
+- `Author` - Name and optionally email of the author, in "Name &lt;email&gt;" format
 - `Tags` - A (markdown) list of tags for this document
 - `Categories` - A (markdown) list of categories this document belongs to
 
